@@ -1,0 +1,9 @@
+STEP 1 : java -jar discovery-server-1.0.0-SNAPSHOT.jar
+STEP 2 : SET Below environment variables to pull configurations from config server (will share on a separate email)
+$env:GITHUB_USERNAME =
+$env:GITHUB_TOKEN =
+$env:GITHUB_URL =
+$env:SPRING_PROFILES_ACTIVE=
+STEP 3: java -jar .\config-server-1.0.0-SNAPSHOT.jar
+STEP 4: java -jar .\service-pega-sor-adapter-1.0.0-SNAPSHOT.jar
+STEP 5: HIT THE URL (http://localhost:8084/api/v1/test/user/123) You should see a failure response
